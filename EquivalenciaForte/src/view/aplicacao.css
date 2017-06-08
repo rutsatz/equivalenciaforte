@@ -1,0 +1,110 @@
+/*
+ * CSS da aplicação.
+ */
+
+.root {
+    -fx-background-color: rgb(113,156,236);
+} 
+
+.scroll-pane{
+    -fx-background-color: rgb(113,156,236);
+} 
+
+
+.button{	
+    -fx-font-weight: bold;	
+    -fx-background-color: rgb(123,203,251);
+    -fx-background-insets: 1.0px ;
+    -fx-background-radius: 5.0px;	
+}
+
+.button:hover{
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(rgb(28,50,253), rgb(18,33,133) );
+
+}
+
+.label{
+    -fx-font-weight: bold;	
+    -fx-font-size: 16px;
+    -fx-text-fill: linear-gradient(royalblue, rgb(18,33,133)) ;
+}
+
+#lblErro{
+    -fx-font-weight: bold;	
+    -fx-font-size: 24px;
+    -fx-text-fill: linear-gradient(#ff3333, red) ;
+}
+
+.tab-pane .tab-header-background{
+    -fx-background-color: rgb(113,156,236);
+    -fx-opacity: 0;
+}
+
+.tab-pane{
+    -fx-tab-min-width:50px;
+}
+
+.tab-pane .tab{
+    -fx-background-color: #e6e6e6;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+    -fx-background-color: derive(rgb(113,156,236), 50%);
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+.tab:hover{
+    -fx-background-color: derive(rgb(113,156,236), 30%);
+}
+
+.tab-pane .tab:selected{
+    -fx-background-color: #3c3c3c;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #96b946;
+}
+
+.tab-content-area{
+    -fx-padding: 10px 10px 10px 10px;
+}
+
+.vbox{
+    -fx-alignment: center ;
+    -fx-spacing: 10px;
+    -fx-background-color: rgb(113,156,236);
+    -fx-padding: 10px;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2px;
+    -fx-border-color: blue;
+} 
+
+.hbox{
+    -fx-alignment: center ;
+    -fx-spacing: 10px;
+    -fx-background-color: rgb(113,156,236);
+    -fx-padding: 10px;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2px;
+    -fx-border-color: blue;
+
+} 
+
+.text-field {
+    -fx-text-fill: rgb(80.0,80.0,80.0);
+    -fx-font-weight: bold;
+}
+
+.text-field:focused {
+    -fx-prompt-text-fill: rgb(150.0,150.0,150.0);
+}

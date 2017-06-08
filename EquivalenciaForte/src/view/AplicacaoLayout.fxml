@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" stylesheets="@aplicacao.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AplicacaoController">
+   <bottom>
+      <ButtonBar prefHeight="40.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="btVerificarEquivalencia" alignment="TOP_LEFT" mnemonicParsing="false" text="Verificar Equivalência">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <ProgressIndicator fx:id="progressIndicator" minHeight="60.0" progress="0.0" />
+            <Button fx:id="btCancelar" mnemonicParsing="false" text="Cancelar" />
+            <Button fx:id="btSair" mnemonicParsing="false" text="Sair" />
+        </buttons>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </ButtonBar>
+   </bottom>
+   <right>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Resultado" />
+            <TabPane tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+              <tabs>
+                <Tab closable="false" text="Passo 1">
+                     <content>
+                        <VBox alignment="TOP_CENTER" spacing="10.0">
+                           <children>
+                              <HBox spacing="10.0" VBox.vgrow="SOMETIMES">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <children>
+                                    <VBox prefWidth="150.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="Programa 1" />
+                                          <TextArea fx:id="resultadoPasso1Programa1" editable="false" VBox.vgrow="SOMETIMES" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefWidth="150.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="Programa 2" />
+                                          <TextArea fx:id="resultadoPasso1Programa2" editable="false" VBox.vgrow="SOMETIMES" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding></VBox>
+                     </content>
+                </Tab>
+                <Tab closable="false" text="Passo 2">
+                     <content>
+                        <VBox alignment="TOP_CENTER" spacing="10.0">
+                           <children>
+                              <HBox spacing="10.0" VBox.vgrow="SOMETIMES">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <children>
+                                    <VBox prefWidth="150.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="Programa 1" />
+                                          <TextArea fx:id="resultadoPasso2Programa1" editable="false" VBox.vgrow="SOMETIMES" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefWidth="150.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="Programa 2" />
+                                          <TextArea fx:id="resultadoPasso2Programa2" editable="false" VBox.vgrow="SOMETIMES" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                </Tab>
+                  <Tab fx:id="tabPasso3" closable="false" text="Passo 3">
+                     <content>
+                        <VBox alignment="TOP_CENTER" spacing="10.0">
+                           <children>
+                              <HBox spacing="10.0" VBox.vgrow="SOMETIMES">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <children>
+                                    <VBox prefWidth="150.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="Programa 1" />
+                                          <TextArea fx:id="resultadoPasso3Programa1" editable="false" VBox.vgrow="SOMETIMES" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefWidth="150.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="Programa 2" />
+                                          <TextArea fx:id="resultadoPasso3Programa2" editable="false" VBox.vgrow="SOMETIMES" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </Tab>
+                  <Tab closable="false" text="Passo 4">
+                     <content>
+                        <VBox alignment="TOP_CENTER" spacing="10.0">
+                           <children>
+                              <HBox spacing="10.0" VBox.vgrow="SOMETIMES">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <children>
+                                    <VBox prefWidth="150.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="Resultado" />
+                                          <TextArea fx:id="resultadoPasso4" editable="false" VBox.vgrow="SOMETIMES" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label text="Programa 1" />
+                  <TextArea fx:id="entradaProgramaUm" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="2.0" left="10.0" right="10.0" top="2.0" />
+                     </VBox.margin></TextArea>
+                  <Button fx:id="btImportar1" mnemonicParsing="false" text="Importar Arquivo">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label text="Programa 2" />
+                  <TextArea fx:id="entradaProgramaDois" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="2.0" left="10.0" right="10.0" top="2.0" />
+                     </VBox.margin></TextArea>
+                  <Button fx:id="btImportar2" mnemonicParsing="false" text="Importar Arquivo">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+   <top>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <Label id="lblErro" fx:id="lblErro" alignment="CENTER" layoutX="97.0" layoutY="5.0" prefHeight="45.0" prefWidth="488.0" text="Mensagem de erro" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <ButtonBar buttonMinWidth="90.0" layoutX="522.0" prefHeight="45.0" prefWidth="278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <buttons>
+                <Button fx:id="btAjuda" mnemonicParsing="false" text="Ajuda" />
+              </buttons>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </ButtonBar>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
